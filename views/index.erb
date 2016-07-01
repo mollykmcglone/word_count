@@ -1,12 +1,11 @@
-<h1>Welcome, friends! Let's play the word count game!</h1>
 <form action="/count">
   <div class="form-group">
-     <label for="check_word">Please enter a word:</label>
-     <input id="check_word" name="check_word" class="form-control" type="text">
+     <label for="check_word"><h3>Please enter a special word:<h3></label>
+     <input id="check_word" name="check_word" class="form-control" type="text" required>
   </div>
   <div class="form-group">
-     <label for="string_to_check">Now enter a sentence or paragraph and we'll count how many times your word appears:</label>
-     <input id="string_to_check" name="string_to_check" class="form-control" type="text">
+     <label for="string_to_check"><h3>Now enter a short story and we'll count how many times your special word appears:<h3></label>
+     <input id="string_to_check" name="string_to_check" class="form-control" type="text" required>
   </div>
-  <button type="submit" class="btn-success">Go</button>
+  <button type="submit" class="btn btn-success btn-large">Go!</button>
 </form>
