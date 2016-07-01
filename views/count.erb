@@ -1,4 +1,8 @@
 <h2>Your special word was: "<%= @check_word %>".</h2>
 <h2>Your story was: "<%= @string_to_check %>"<h2>
+<% if @answer = 1 %>
+<h2>In your story, "<%= @check_word %>" shows up <%= @answer %> time!</h2><br>
+<% else >%
 <h2>In your story, "<%= @check_word %>" shows up <%= @answer %> times!</h2><br>
+<% end >%
 <a href="/" class="btn btn-primary btn-lg active" role="button">Play Again</a>
