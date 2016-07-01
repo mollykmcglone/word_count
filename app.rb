@@ -1,15 +1,15 @@
-# require('sinatra')
-# require('sinatra/reloader')
-# require('./lib/allergies')
-# also_reload('lib/**/*.rb')
-#
-# get('/') do
-#   erb(:index)
-# end
-#
-# get('/allergies') do
-#   @score = params.fetch("score")
-#   @score_integer = @score.to_i
-#   @result = @score_integer.allergies()
-#   erb(:allergies)
-# end
+require('sinatra')
+require('sinatra/reloader')
+require('./lib/word_count')
+also_reload('lib/**/*.rb')
+
+get('/') do
+  erb(:index)
+end
+
+get('/count') do
+  @check_word = params.fetch("check_word")
+  @string_to_check = params.fetch("string_to_check")
+  @answer = @string_to_check.word_count(@check_word)
+  erb(:count)
+end

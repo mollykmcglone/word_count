@@ -1,8 +1,12 @@
-<h1></h1>
-<form action="/allergies">
+<h1>Welcome, friends! Let's play the word count game!</h1>
+<form action="/count">
   <div class="form-group">
-     <label for="score">Enter your allergy score and we'll tell you what you're allergic to!</label>
-     <input id="score" name="score" min="1" max="255" class="form-control" type="number">
+     <label for="check_word">Please enter a word:</label>
+     <input id="check_word" name="check_word" class="form-control" type="text">
+  </div>
+  <div class="form-group">
+     <label for="string_to_check">Now enter a sentence or paragraph and we'll count how many times your word appears:</label>
+     <input id="string_to_check" name="string_to_check" class="form-control" type="text">
   </div>
   <button type="submit" class="btn-success">Go</button>
 </form>
