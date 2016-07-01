@@ -8,7 +8,7 @@ describe('the word count path', {:type => :feature}) do
     visit('/')
     fill_in('check_word', :with => 'hat')
     fill_in('string_to_check', :with => 'The cat in the hat! What a hat has the cat! Hat that cat!')
-    click_button('Go')
+    click_button('Play')
     expect(page).to have_content(3)
   end
 end

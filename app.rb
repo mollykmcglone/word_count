@@ -2,7 +2,6 @@ require('sinatra')
 require('sinatra/reloader')
 require('./lib/word_count')
 also_reload('lib/**/*.rb')
-set :public_folder, File.dirname('public/css/styles.css')
 
 get('/') do
   erb(:index)
